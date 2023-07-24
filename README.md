@@ -44,17 +44,25 @@ Path/to/Stats/
 Before the main script runs, Stats directory has to have two the csv files belonging to the performances of the patients under the format name 
 results-metric-(3D or 2D)-region.csv (ex: results-Dice-3D-L1.csv, or results-HD-2D-L2.CSV). 
 
+The sub-sampling directory will contain the following information: 
+- Boot_txt_log.txt : results from bootstrapping on the different sub-sample sizes
+-  full_txt_log.txt : results on the entire dataset for the 3D metrics (analystical + bootstrapping values)
+- results.xlsx : the results but in as an excel sheet
+- subsampled-stats-DSC-Brain Tumor-Jan11.csv : the sub-sampled results for all 100 random selections and their corresponding results
+- txt_log.txt : the analytical values obtained from the Gaussian model estimation
+
+
 ## Arguments of the main script:
 
 the main script has some arguments that help you generate sub-sampling data and their corresponding visualizations.
 
 -  --subsampling : should be set to true if you want the script to sub-sample and generate sub-sampling results. (is set to falso only when debugging).
--  --root_path' : is defined by the script itself, when you define the path to Stats.
-    #/Users/rosana.eljurdi/PycharmProjects/nnUNet_SegVal/nnUNet_preprocessed/Task001_SegVal_BrainTumor/results-hauss-3D-L1.csv
-    parser.add_argument('--visualize' ,  type=str, default=True)
-    parser.add_argument('--visualize_sabsamples', type=str, default=False)
-    parser.add_argument('--K_samples', type=list,
-                        default=k_dict[dataset])
+-  --root_path : is defined by the script itself, when you define the path to Stats.
+- --visualize : if set to true, Visualizes the Distribution of the entire dataset through box plots
+- -- --visualize_sabsamples: to visualize box plots of each sub-sample
+- '--K_samples': predefined, entire testset size, no need to set a value, it is automatically done for hippo and brain-tumor dataset
+
+  The most important parameter to be set to true is the subsampling parameter. If set to true, it will generate a sub-directory of FrameWork-* with the following format :subsampled-stats-metric-Bdataset-data (ex: subsampled-stats-DSC-Brain Tumor-Jan1118). The code will generate this for all frameworks within the Stats directory. 
 
 # Generating the latex table results: 
 
