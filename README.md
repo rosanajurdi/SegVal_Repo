@@ -9,6 +9,41 @@ Code used to re-generate the results and tables for the paper entitled: "Confide
 
 For the training we have used the original implementation of nnUnet. The code is forked from the initial directory and can be found following this [link](https://github.com/rosanajurdi/nnUNet_SegVal)
 
+# Creating Sub-sampled Data
+
+The sub-sampled data is generated via the [Confidence Interval]() directory. The full code can be launched from its main script. Within the parameters of the main.py script, you only need to specify the path to the directory **Stats** which containts you results. The results need to be under the following format: 
+
+Stats Directory Structure
+
+Stats
+.
+│ └── Task004_SegVal_Hippocampus
+│ ├── Dice-Accuracy
+│ │ └── results-Dice-3D-L1.csv
+│ └── HD
+│ ├── Boxplot-hippo-HD.png (to be generated)
+│ ├── Distribution-hippo-HD.png  (to be generated)
+│ ├── results-hauss-3D-L1.csv
+│ └── subsampled-stats-HD-hippo-Dec0214  (to be generated)
+│ ├── Boot_txt_log.txt
+│ ├── subsampled-stats-HD-hippo-Dec02.csv
+│ └── txt_log.txt
+├── FrameWork-B
+│ ├── Task001_SegVal_BrainTumor
+│ │ ├── Distribution-Brain Tumor-3D-DSC.svg  (to be generated)
+│ │ ├── Distribution-Brain Tumor-3D-HD.svg  (to be generated)
+│ │ ├── Distribution-Brain Tumor-DSC.png  (to be generated)
+│ │ ├── Distribution-Brain Tumor-DSC.svg  (to be generated)
+│ │ ├── Distribution-Brain Tumor-HD.png (to be generated)
+│ │ ├── results-Dice-3D-L1.csv  (required)
+│ │ ├── results-hauss-3D-L1.csv  (required)
+│ │ └── subsampled-stats-HD-Brain Tumor-Jul2419  (to be generated)
+│ │ ├── Boot_txt_log.txt
+│ │ ├── full_txt_log.txt
+│ │ ├── results.xlsx
+│ │ ├── subsampled-stats-HD-Brain Tumor-Jul24.csv
+│ │ └── txt_log.txt
+│ └── Task004_SegVal_Hippocampus
 
 # Generating the latex table results: 
 
