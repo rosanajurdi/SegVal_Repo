@@ -7,7 +7,7 @@ Code used to re-generate the results and tables for the paper entitled: "Confide
 
 # Training
 
-For the training we have used the original implementation of nnUnet. The code is forked from the initial directory and can be found following this [link](https://github.com/rosanajurdi/nnUNet_SegVal)
+For the training we have used the original implementation of nnUnet. The code is forked from the initial directory and can be found following this [link](https://github.com/rosanajurdi/nnUNet_SegVal). We will skip the documentation for this step as it is a specification of the model you are using. You can refer for the link above for the documentation on nnUnet training, or for our previous [repo]() for a framework we did via regular Unet. The functions and modalities in this repo are independent of the training. 
 
 # Creating Sub-sampled Data
 
