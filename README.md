@@ -15,8 +15,8 @@ The sub-sampled data is generated via the [Confidence Interval]() directory. The
 
 Stats Directory Structure
 
-Stats
-Project Directory Structure
+```
+Stats Directory Structure
 .
 ├── 2D_Unet.zip
 ├── 3D_Unet.zip
@@ -59,7 +59,7 @@ Project Directory Structure
 │   │   ├── Distribution-Brain Tumor-DSC.png
 │   │   ├── Distribution-Brain Tumor-DSC.svg
 │   │   ├── Distribution-Brain
-
+```
 
 # Generating the latex table results: 
 
@@ -73,5 +73,5 @@ Example
 
 ```python
 python3 Latex_Generator.py --path /Users/rosana.eljurdi/PycharmProjects/SegVal_Project/Stats/FrameWork-B/Task004_SegVal_Hippocampus/subsampled-stats-DSC-Hippocampus-Jan1118/subsampled-stats-DSC-Hippocampus-Jan11.csv --key  hippo
-
+```
 
