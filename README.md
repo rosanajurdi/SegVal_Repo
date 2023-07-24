@@ -10,7 +10,7 @@ Code used to re-generate the results and tables for the paper entitled: "Confide
 For the training we have used the original implementation of nnUnet. The code is forked from the initial directory and can be found following this [link](https://github.com/rosanajurdi/nnUNet_SegVal)
 
 
-#Generating the latex table results: 
+# Generating the latex table results: 
 
 The tables in the paper are generated via the following [latex_generator]() script. The script takes an input two arguments: 
 -path : the path to the csv file containing the sub-sampled results. ( sub-sampled results are the results of the metrics and confidence intervals over all sub-samples both bootstrap and parametric. They are usually found in: )
