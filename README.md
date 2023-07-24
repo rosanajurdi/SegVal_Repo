@@ -64,6 +64,9 @@ the main script has some arguments that help you generate sub-sampling data and 
 
   The most important parameter to be set to true is the subsampling parameter. If set to true, it will generate a sub-directory of FrameWork-* with the following format :subsampled-stats-metric-Bdataset-data (ex: subsampled-stats-DSC-Brain Tumor-Jan1118). The code will generate this for all frameworks within the Stats directory. 
 
+# Other functions in the Confidence Interval Directory
+aside from the confidence intervals based on the variable sample size, you can also generate the confidence intervals basing on the Gaussian assumption via the following python script : [Generate_Gaussian_Dist_CV_Table.py]()
+
 # Generating the latex table results: 
 
 The tables in the paper are generated via the following [latex_generator]() script. The script takes an input two arguments: 
