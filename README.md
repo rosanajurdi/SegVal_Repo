@@ -73,13 +73,15 @@ The tables in the paper are generated via the following [latex_generator]() scri
 -path : the path to the csv file containing the sub-sampled results. ( sub-sampled results are the results of the metrics and confidence intervals over all sub-samples both bootstrap and parametric. They are usually found in: )
 -key : which dataset we are using hippo for hippocampus and brain for the Brain tumor dataset 
 
+
+```python
+python3 Latex_Generator.py --path /Users/rosana.eljurdi/PycharmProjects/SegVal_Project/Stats/FrameWork-B/Task004_SegVal_Hippocampus/subsampled-stats-DSC-Hippocampus-Jan1118/subsampled-stats-DSC-Hippocampus-Jan11.csv --key  hippo
+```
+
 # Additional Data: 
 
 In addition to the tables and results, you can also have access to the meta data of the survey conducted in [statistics]()
 
 
 
-```python
-python3 Latex_Generator.py --path /Users/rosana.eljurdi/PycharmProjects/SegVal_Project/Stats/FrameWork-B/Task004_SegVal_Hippocampus/subsampled-stats-DSC-Hippocampus-Jan1118/subsampled-stats-DSC-Hippocampus-Jan11.csv --key  hippo
-```
 
