@@ -16,34 +16,50 @@ The sub-sampled data is generated via the [Confidence Interval]() directory. The
 Stats Directory Structure
 
 Stats
+Project Directory Structure
 .
-│ └── Task004_SegVal_Hippocampus
-│ ├── Dice-Accuracy
-│ │ └── results-Dice-3D-L1.csv
-│ └── HD
-│ ├── Boxplot-hippo-HD.png (to be generated)
-│ ├── Distribution-hippo-HD.png  (to be generated)
-│ ├── results-hauss-3D-L1.csv
-│ └── subsampled-stats-HD-hippo-Dec0214  (to be generated)
-│ ├── Boot_txt_log.txt
-│ ├── subsampled-stats-HD-hippo-Dec02.csv
-│ └── txt_log.txt
+├── 2D_Unet.zip
+├── 3D_Unet.zip
+├── Boxplots.py
+├── FrameWork-A
+│   ├── Task001_SegVal_BrainTumor
+│   │   ├── Boxplot-Brain Tumor-DSC.png
+│   │   ├── Boxplot-Brain Tumor-HD.png
+│   │   ├── Distribution-Brain Tumor-DSC.png
+│   │   ├── Distribution-Brain Tumor-HD.png
+│   │   ├── results-Dice-3D-L1.csv
+│   │   ├── results-hauss-3D-L1.csv
+│   │   ├── subsampled-stats-DSC-Brain Tumor-Dec0811
+│   │   │   ├── Boot_txt_log.txt
+│   │   │   ├── subsampled-stats-DSC-Brain Tumor-Dec08.csv
+│   │   │   └── txt_log.txt
+│   │   ├── subsampled-stats-DSC-Brain Tumor-Dec0812
+│   │   │   ├── Boot_txt_log.txt
+│   │   │   ├── subsampled-stats-DSC-Brain Tumor-Dec08.csv
+│   │   │   └── txt_log.txt
+│   │   └── subsampled-stats-HD-Brain Tumor-Dec0812
+│   │       ├── Boot_txt_log.txt
+│   │       ├── subsampled-stats-HD-Brain Tumor-Dec08.csv
+│   │       └── txt_log.txt
+│   └── Task004_SegVal_Hippocampus
+│       ├── Dice-Accuracy
+│       │   └── results-Dice-3D-L1.csv
+│       └── HD
+│           ├── Boxplot-hippo-HD.png
+│           ├── Distribution-hippo-HD.png
+│           ├── results-hauss-3D-L1.csv
+│           └── subsampled-stats-HD-hippo-Dec0214
+│               ├── Boot_txt_log.txt
+│               ├── subsampled-stats-HD-hippo-Dec02.csv
+│               └── txt_log.txt
 ├── FrameWork-B
-│ ├── Task001_SegVal_BrainTumor
-│ │ ├── Distribution-Brain Tumor-3D-DSC.svg  (to be generated)
-│ │ ├── Distribution-Brain Tumor-3D-HD.svg  (to be generated)
-│ │ ├── Distribution-Brain Tumor-DSC.png  (to be generated)
-│ │ ├── Distribution-Brain Tumor-DSC.svg  (to be generated)
-│ │ ├── Distribution-Brain Tumor-HD.png (to be generated)
-│ │ ├── results-Dice-3D-L1.csv  (required)
-│ │ ├── results-hauss-3D-L1.csv  (required)
-│ │ └── subsampled-stats-HD-Brain Tumor-Jul2419  (to be generated)
-│ │ ├── Boot_txt_log.txt
-│ │ ├── full_txt_log.txt
-│ │ ├── results.xlsx
-│ │ ├── subsampled-stats-HD-Brain Tumor-Jul24.csv
-│ │ └── txt_log.txt
-│ └── Task004_SegVal_Hippocampus
+│   ├── Task001_SegVal_BrainTumor
+│   │   ├── Distribution-Brain Tumor-3D-DSC.svg
+│   │   ├── Distribution-Brain Tumor-3D-HD.svg
+│   │   ├── Distribution-Brain Tumor-DSC.png
+│   │   ├── Distribution-Brain Tumor-DSC.svg
+│   │   ├── Distribution-Brain
+
 
 # Generating the latex table results: 
 
