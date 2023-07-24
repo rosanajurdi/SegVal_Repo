@@ -17,49 +17,44 @@ Stats Directory Structure
 
 ```
 Stats Directory Structure
-.
-├── 2D_Unet.zip
-├── 3D_Unet.zip
-├── Boxplots.py
-├── FrameWork-A
-│   ├── Task001_SegVal_BrainTumor
-│   │   ├── Boxplot-Brain Tumor-DSC.png
-│   │   ├── Boxplot-Brain Tumor-HD.png
-│   │   ├── Distribution-Brain Tumor-DSC.png
-│   │   ├── Distribution-Brain Tumor-HD.png
-│   │   ├── results-Dice-3D-L1.csv
-│   │   ├── results-hauss-3D-L1.csv
-│   │   ├── subsampled-stats-DSC-Brain Tumor-Dec0811
-│   │   │   ├── Boot_txt_log.txt
-│   │   │   ├── subsampled-stats-DSC-Brain Tumor-Dec08.csv
-│   │   │   └── txt_log.txt
-│   │   ├── subsampled-stats-DSC-Brain Tumor-Dec0812
-│   │   │   ├── Boot_txt_log.txt
-│   │   │   ├── subsampled-stats-DSC-Brain Tumor-Dec08.csv
-│   │   │   └── txt_log.txt
-│   │   └── subsampled-stats-HD-Brain Tumor-Dec0812
-│   │       ├── Boot_txt_log.txt
-│   │       ├── subsampled-stats-HD-Brain Tumor-Dec08.csv
-│   │       └── txt_log.txt
-│   └── Task004_SegVal_Hippocampus
-│       ├── Dice-Accuracy
-│       │   └── results-Dice-3D-L1.csv
-│       └── HD
-│           ├── Boxplot-hippo-HD.png
-│           ├── Distribution-hippo-HD.png
-│           ├── results-hauss-3D-L1.csv
-│           └── subsampled-stats-HD-hippo-Dec0214
-│               ├── Boot_txt_log.txt
-│               ├── subsampled-stats-HD-hippo-Dec02.csv
-│               └── txt_log.txt
+Path/to/Stats/ 
 ├── FrameWork-B
 │   ├── Task001_SegVal_BrainTumor
-│   │   ├── Distribution-Brain Tumor-3D-DSC.svg
-│   │   ├── Distribution-Brain Tumor-3D-HD.svg
-│   │   ├── Distribution-Brain Tumor-DSC.png
-│   │   ├── Distribution-Brain Tumor-DSC.svg
-│   │   ├── Distribution-Brain
+│   │   ├── Distribution-Brain Tumor-3D-DSC.svg (to be generated)
+│   │   ├── Distribution-Brain Tumor-3D-HD.svg (to be generated)
+│   │   ├── Distribution-Brain Tumor-DSC.png (to be generated)
+│   │   ├── Distribution-Brain Tumor-DSC.svg (to be generated)
+│   │   ├── results-Dice-3D-L1.csv (input)
+│   │   ├── results-hauss-3D-L1.csv (input)
+│   │   ├── subsampled-stats-DSC-Brain Tumor-Jan1118 (to be generated)
+│   │   │   ├── Boot_txt_log.txt
+│   │   │   ├── full_txt_log.txt
+│   │   │   ├── results.xlsx
+│   │   │   ├── subsampled-stats-DSC-Brain Tumor-Jan11.csv
+│   │   │   └── txt_log.txt
+│   │   ├── subsampled-stats-HD-Brain Tumor-Jan1118 (to be generated)
+│   │   │   ├── Boot_txt_log.txt
+│   │   │   ├── full_txt_log.txt
+│   │   │   ├── results.xlsx
+│   │   │   ├── subsampled-stats-HD-Brain Tumor-Jan11.csv
+│   │   │   └── txt_log.txt
+
 ```
+
+Before the main script runs, Stats directory has to have two the csv files belonging to the performances of the patients under the format name 
+results-metric-(3D or 2D)-region.csv (ex: results-Dice-3D-L1.csv, or results-HD-2D-L2.CSV). 
+
+## Arguments of the main script:
+
+the main script has some arguments that help you generate sub-sampling data and their corresponding visualizations.
+
+-  --subsampling : should be set to true if you want the script to sub-sample and generate sub-sampling results. (is set to falso only when debugging).
+-  --root_path' : is defined by the script itself, when you define the path to Stats.
+    #/Users/rosana.eljurdi/PycharmProjects/nnUNet_SegVal/nnUNet_preprocessed/Task001_SegVal_BrainTumor/results-hauss-3D-L1.csv
+    parser.add_argument('--visualize' ,  type=str, default=True)
+    parser.add_argument('--visualize_sabsamples', type=str, default=False)
+    parser.add_argument('--K_samples', type=list,
+                        default=k_dict[dataset])
 
 # Generating the latex table results: 
 
