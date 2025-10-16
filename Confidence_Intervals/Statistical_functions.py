@@ -1,4 +1,3 @@
-from re import A
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
@@ -128,7 +127,6 @@ def draw_bs_replicates(data, func, size):
 
     return bs_replicates
 
-from pandas import Series
 def Bootstrap_Analysis(data, k= None, skewness = True):
     ""
     """

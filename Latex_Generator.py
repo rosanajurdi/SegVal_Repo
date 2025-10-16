@@ -1,8 +1,6 @@
 from texttable import Texttable
 import latextable
 
-from texttable import Texttable
-import latextable
 import pandas as pd
 from pathlib import Path
 import argparse
