@@ -1,6 +1,16 @@
 # SegVal Repository
 Code used to re-generate the results and tables for the paper entitled: "Confidence intervals for performance estimates in 3D medical image segmentation". 
 
+## Development
+
+This repository is being converted from research scripts into a tested Python
+package and reproducible analysis pipeline. For local development, use a
+dedicated environment instead of installing dependencies into your system Python
+or conda base environment.
+
+See [Development Setup](docs/development.md) for the recommended conda and
+editable-install workflow.
+
 
 
 
@@ -81,7 +91,6 @@ python3 Latex_Generator.py --path /Users/rosana.eljurdi/PycharmProjects/SegVal_P
 # Additional Data: 
 
 In addition to the tables and results, you can also have access to the meta data of the survey conducted in [statistics]()
-
 
 
 
