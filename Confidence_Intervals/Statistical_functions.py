@@ -11,8 +11,8 @@ def statistical_analysis(df):
     std = np.round(
         df.std().values[0], 3
     )  # get the standard deviation of the sample of size k
-    SEM = np.round(np.float(std) / np.sqrt(len(df)), 3)
-    w = np.round(2 * 1.96 * np.float(std) / np.sqrt(len(df)), 3)
+    SEM = np.round(float(std) / np.sqrt(len(df)), 3)
+    w = np.round(2 * 1.96 * float(std) / np.sqrt(len(df)), 3)
     CI = [mean - 1.96 * SEM, mean + 1.96 * SEM]
     CI_I = [-1.96 * SEM, +1.96 * SEM]
     # print(str(mean) + "&" + str(std) + "&" + str(SEM) + "&" + str("[{} , {}]".format(-w/2.0, w/2.0)) + "&" )
